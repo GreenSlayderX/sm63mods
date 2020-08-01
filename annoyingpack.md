@@ -1,7 +1,7 @@
 # Annoying Package
 ### Features
 - Advertisments that pop up on your screen and cannot be closed!
-- Lagback! Mario will occasionally teleport behind, where he was some time ago!
+- Lagback! Mario will occasionally & randomly teleport behind to where he was some time ago!
 ### Usage
 1. Load in this code in the level title using a text editor (Notepad, Wordpad, Word Document): `code is here`
 2. To use all the features at default settings, write `//ANNOY:ALL` in a sign. Mario will lagback, get advertisments posted on the screen, <more>.
@@ -29,4 +29,18 @@ Advert #8: Characters 36-40 (`x|yyy|`), design: <link8>
 
 Advert #9: Characters 41-45 (`x|yyy|`), design: <link9>
 
-Advert #10: Characters 46-50 (`x|yyy|`), design: <link10>
+Advert #10: Characters 46-49 (`x|yyy`), design: <link10>
+  
+<b>Please always include 49 characters in the SEED string and only use numbers and the "|" in the format stated above. The mod will behave unexpectedly if you do not adhere to these conventions. In addition, if you disable an advert, please set it's chance to 000.</b>
+
+Examples:
+
+`1|010|1|010|1|010|1|010|1|010|1|010|1|010|1|010|1|010|1|010` - Default seed.
+
+`1|020|0|000|1|020|0|000|1|020|0|000|1|020|0|000|1|020|0|000` - Second, fourth, sixth, eighth and tenth advertisments are unable to appear.
+
+`1|050|1|050|0|000|0|000|0|000|0|000|0|000|0|000|0|000|0|000` - Only the first two adverts can appear.
+
+
+### Lagback
+WIP
