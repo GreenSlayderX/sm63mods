@@ -1,2 +1,4 @@
 # sm63mods
-<p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"><span rel="dct:title">SM63 Mods</span> by <span property="cc:attributionName">GreenSlayder_x</span> is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" /></a></p>
+<p> This is a place where you can get and use all the mods I make (I have no idea why you would want to use them when there are better alternatives out there. But whatever floats your boat) </p>
+<p> Current mods: </p>
+<p> - Annoying Package: Advertisments, lagback, and more! </p>
