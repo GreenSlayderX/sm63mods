@@ -12,45 +12,45 @@
 
 `SEED` - a string containing 20 values, separated by "|" characters; every character with an even index number (first, third, fifth, seventh, ninth etc.) is a `1` or `0` and corresponds to a certain advert. If the value is `1`, that advert will be able to appear. Following that number is a "|", then three characters `xxx`, which represent the chance (0% to 100%) for that certain advert to appear every time a random advert is queued to appear. Advert designs:
 
-Advert #1: First 5 characters (`x|yyy|`), design: <link1>
+Advert #1: <design>
 
-Advert #2: Characters 6-10 (`x|yyy|`), design: <link2>
-
-Advert #3: Characters 11-15 (`x|yyy|`), design: <link3>
-
-Advert #4: Characters 16-20 (`x|yyy|`), design: <link4>
-
-Advert #5: Characters 21-25 (`x|yyy|`), design: <link5>
-
-Advert #6: Characters 26-30 (`x|yyy|`), design: <link6>
-
-Advert #7: Characters 31-35 (`x|yyy|`), design: <link7>
-
-Advert #8: Characters 36-40 (`x|yyy|`), design: <link8>
-
-Advert #9: Characters 41-45 (`x|yyy|`), design: <link9>
-
-Advert #10: Characters 46-49 (`x|yyy`), design: <link10>
+Advert #2: <design>
   
-<b>Please always include 49 characters in the SEED string and only use numbers and the "|" in the format stated above. The mod will behave unexpectedly if you do not adhere to these conventions. In addition, if you disable an advert, please set it's chance to 000. Lastly, make sure the sum of the chances is 100; if it is under or above 100, some adverts may be unable to appear.</b>
+Advert #3: <design>
+  
+Advert #4: <design>
+  
+Advert #5: <design>
+  
+Advert #6: <design>
+  
+Advert #7: <design>
+  
+Advert #8: <design>
+  
+Advert #9: <design>
+  
+Advert #10: <design>
+  
+<b>Please only use numbers and the "|" separator when defining the SEED string. The mod will behave unexpectedly if you do not adhere to these conventions. In addition, make sure the sum of the chances is 100; if it is under or above 100, some adverts may be unable to appear.</b>
 
 Examples:
 
-`1|010|1|010|1|010|1|010|1|010|1|010|1|010|1|010|1|010|1|010` - Default seed.
+`10|10|10|10|10|10|10|10|10|10` - Default seed.
 
-`1|020|0|000|1|020|0|000|1|020|0|000|1|020|0|000|1|020|0|000` - Second, fourth, sixth, eighth and tenth advertisments are unable to appear.
+`20|0|20|0|20|0|20|0|20|0` - Second, fourth, sixth, eighth and tenth advertisments are unable to appear.
 
-`1|050|1|050|0|000|0|000|0|000|0|000|0|000|0|000|0|000|0|000` - Only the first two adverts can appear.
+`50|50|0|0|0|0|0|0|0|0` - Only the first two adverts can appear.
 
-`1|099|1|001|1|001|0|000|0|000|0|000|0|000|0|000|0|000|0|000` - Only the first two adverts can appear; the third advert could appear, but the total chance is past 100.
+`99|1|1|0|0|0|0|0|0|0` - Only the first two adverts can appear; the third advert has an above-0 chance, but cannot appear because the sum of changes is over 100.
 
-`1|099|0|000|0|000|0|000|0|000|0|000|0|000|0|000|0|000|0|000|` - Either the first advert appears 99% of the time, or nothing will appear at all.
+`99|0|0|0|0|0|0|0|0|0` - Either the first advert appears 99% of the time, or nothing will appear at all.
 
-`MINDELAY` - the minimum delay between each time a random advert is queued.
+`MINDELAY` - the minimum delay between each time a random advert is queued. Default: 500
 
-`DELAYRANGE` - a random number between 0 and this number is selected and added to the MINDELAY value; the final delay will be the resulting sum.
+`DELAYRANGE` - a random number between 0 and this number is selected and added to the MINDELAY value; the final delay will be the resulting sum. Default: 150
 
 <b>Examples:</b>
-`//ANNOY:ADS SEED:1|020|0|000|1|020|0|000|1|020|0|000|1|020|0|000|1|020|0|000 MINDELAY:550 DELAYRANGE:150` - The first, third, fifth, seventh or ninth delay appears every 550-700 frames.
+`//ANNOY:ADS SEED:20|0|20|0|20|0|20|0|20|0 MINDELAY:550 DELAYRANGE:150` - The first, third, fifth, seventh or ninth delay appears every 550-700 frames.
 ### Lagback
 WIP
