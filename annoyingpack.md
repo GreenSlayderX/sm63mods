@@ -10,7 +10,7 @@
 ### Advertisments
 `//ANNOY:ADS SEED:<seed> MINDELAY:<mindelay> DELAYRANGE:<delayrange>`
 
-`SEED` - a string containing 20 values, separated by "|" characters; every character with an even index number (first, third, fifth, seventh, ninth etc.) is a `1` or `0` and corresponds to a certain advert. If the value is `1`, that advert will be able to appear. Following that number is a "|", then three characters `xxx`, which represent the chance (0% to 100%) for that certain advert to appear every time a random advert is queued to appear. Advert designs:
+`SEED` - a string containing 10 values, separated by "|" characters; every value represents the chance for that specific advert to appear. The seed looks like `a|b|c|d|e|f|g|h|i|j`, where `a` is the chance for the first advert to appear (advert designs listed below), `b` is the chance for the second advert to appear, and so on. Advert designs:
 
 Advert #1: <design>
 
